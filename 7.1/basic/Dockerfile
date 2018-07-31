@@ -1,7 +1,7 @@
 FROM php:7.1-fpm-alpine3.7
 
 ###### Install packages
-RUN apk --no-cache add g++ gcc make autoconf curl curl-dev bzip2 bzip2-dev zip icu icu-libs icu-dev \
+RUN apk --no-cache add g++ gcc git make autoconf curl curl-dev bzip2 bzip2-dev zip icu icu-libs icu-dev \
     libmemcached libmemcached-dev zlib-dev cyrus-sasl-dev mysql-client nginx supervisor tzdata bash \
     libpng-dev freetype-dev libjpeg-turbo-dev libmcrypt-dev \
     postgresql-libs postgresql-dev
